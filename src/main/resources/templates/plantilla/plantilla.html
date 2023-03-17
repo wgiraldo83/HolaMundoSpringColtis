@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    
+    <head>
+        <title>plantilla</title>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </head>
+                <body>
+                    <header th:fragment="header">            
+                        <h1>Mi primera app de spring</h1>             
+                    </header>
+
+                    
+                    <footer th:fragment="footer">
+                        <form method="post" th:action="@{/logout}">
+                            <a href="#" onclick="this.parentNode.submit();">Cerrar Sesión</a>
+                        </form>
+
+                    </footer>
+                </body>
+                </html>
